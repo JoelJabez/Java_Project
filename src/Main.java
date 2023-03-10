@@ -1,5 +1,8 @@
 import lombok.SneakyThrows;
 
+import java.util.HashMap;
+import java.util.HashSet;
+
 public class Main {
     @SneakyThrows
     public static void main(String[] args) {
@@ -138,5 +141,23 @@ public class Main {
 //
 //        System.out.println("Array List: " + numbers);
 
+
+        HashSet<Integer> numbers = new HashSet<>();
+
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
+
+        System.out.println(numbers);
+
+
+        HashMap<String, String> phoneBook = new HashMap<>();
+
+        phoneBook.put("Alice", "+6012-345-6789");
+        phoneBook.put("Bob", "+6012-354-6789");
+
+        System.out.println(phoneBook);
     }
 }
