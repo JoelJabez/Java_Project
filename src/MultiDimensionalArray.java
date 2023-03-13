@@ -17,8 +17,8 @@ public class MultiDimensionalArray {
             number = scanner.nextInt();
         }while(number > 9 || number < 2);
 
-        int first_matrix[][] = new int[number][number];
-        int second_matrix[][] = new int[number][number];
+        int[][] first_matrix = new int[number][number];
+        int[][] second_matrix = new int[number][number];
 
         System.out.println("First matrix");
         for (int i = 0; i < first_matrix.length; i++) {
