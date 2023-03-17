@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface Series2 {
+public interface Series2 extends Series{
+    public int getNum();
 }

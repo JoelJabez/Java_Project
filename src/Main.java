@@ -1,7 +1,6 @@
 import lombok.SneakyThrows;
 
-import java.util.HashMap;
-import java.util.HashSet;
+import java.io.FileReader;
 
 public class Main {
     @SneakyThrows
@@ -48,7 +47,6 @@ public class Main {
 //       Charlie charlie = new Charlie("Charlie");
 //
 //       charlie.hello();
-
 //        Dog dog = new Dog();
 //        Cat cat = new Cat();
 //
@@ -142,22 +140,33 @@ public class Main {
 //        System.out.println("Array List: " + numbers);
 
 
-        HashSet<Integer> numbers = new HashSet<>();
+//        HashSet<Integer> numbers = new HashSet<>();
+//
+//        numbers.add(1);
+//        numbers.add(2);
+//        numbers.add(3);
+//        numbers.add(4);
+//        numbers.add(5);
+//
+//        System.out.println(numbers);
+//
+//
+//        HashMap<String, String> phoneBook = new HashMap<>();
+//
+//        phoneBook.put("Alice", "+6012-345-6789");
+//        phoneBook.put("Bob", "+6012-354-6789");
+//
+//        System.out.println(phoneBook);
 
-        numbers.add(1);
-        numbers.add(2);
-        numbers.add(3);
-        numbers.add(4);
-        numbers.add(5);
-
-        System.out.println(numbers);
+        FileReader fileReader = new FileReader("NCR-2902-1126235507.TXT");
+        int read;
+//        System.out.println((char) read);
 
 
-        HashMap<String, String> phoneBook = new HashMap<>();
+        while ((read = fileReader.read()) != -1) {
+            System.out.println((char) read);
+        }
 
-        phoneBook.put("Alice", "+6012-345-6789");
-        phoneBook.put("Bob", "+6012-354-6789");
-
-        System.out.println(phoneBook);
+        fileReader.close();
     }
 }

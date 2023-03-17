@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public interface Series {
+public interface Series {
+    public int getNext();
+
+   default void printMessage(){
+       System.out.println("This is from Series");
+   }
 }
