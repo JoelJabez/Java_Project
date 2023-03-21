@@ -171,7 +171,7 @@ public class Main {
 //        fileReader.close();
 
 
-       int[] numbers = {2, 5, 8, 4, 6, 7, 1, 3, 9, 10, 0};
+       int[] numbers = {100, 2, 5, 8, 4, 6, 7, 1, 3, 9, 10, 0, 100};
        MergeSort.sort(numbers);
     }
 }
