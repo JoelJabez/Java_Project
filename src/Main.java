@@ -1,7 +1,5 @@
 import lombok.SneakyThrows;
 
-import java.io.FileReader;
-
 public class Main {
     @SneakyThrows
     public static void main(String[] args) {
@@ -158,15 +156,22 @@ public class Main {
 //
 //        System.out.println(phoneBook);
 
-        FileReader fileReader = new FileReader("NCR-2902-1126235507.TXT");
-        int read;
-//        System.out.println((char) read);
+//        FileReader fileReader = new FileReader("NCR-2902-1126235507.TXT");
+//        int read = fileReader.read();
+//
+//        while (read != -1) {
+//            if (read == 13) {
+//                System.out.println();
+//            } else {
+//                System.out.print((char) read);
+//            }
+//            read = fileReader.read();
+//        }
+//
+//        fileReader.close();
 
 
-        while ((read = fileReader.read()) != -1) {
-            System.out.println((char) read);
-        }
-
-        fileReader.close();
+       int[] numbers = {2, 5, 8, 4, 6, 7, 1, 3, 9, 10, 0};
+       MergeSort.sort(numbers);
     }
 }
