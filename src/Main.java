@@ -1,5 +1,9 @@
 import lombok.SneakyThrows;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
+
 public class Main {
     @SneakyThrows
     public static void main(String[] args) {
@@ -171,7 +175,17 @@ public class Main {
 //        fileReader.close();
 
 
-       int[] numbers = {100, 2, 5, 8, 4, 6, 7, 1, 3, 9, 10, 0, 100};
-       MergeSort.sort(numbers);
+//       int[] numbers = {100, 2, 5, 8, 4, 6, 7, 1, 3, 9, 10, 0, 100};
+//       MergeSort.sort(numbers);
+
+
+        ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(7, 5, 3, 8, 4, 1, 9, 6, 0, 2));
+
+        long start = System.nanoTime();
+        BubbleSort.sort(numbers);
+        long end = System.nanoTime();
+
+        System.out.println(numbers);
+        System.out.println(TimeUnit.NANOSECONDS.toMicros(end - start));
     }
 }
