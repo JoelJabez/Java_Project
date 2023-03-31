@@ -16,6 +16,7 @@ public class BinarySearch {
         else:
             return -1
      */
+
     public static void search(ArrayList<Integer> n, int numberToSearch) {
         if (isSorted(n)) {
             System.out.println(search_recursion(n, 0, n.size() / 2, n.size(), numberToSearch));
