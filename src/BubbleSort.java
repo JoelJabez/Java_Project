@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class BubbleSort {
     /*
@@ -16,6 +17,14 @@ public class BubbleSort {
             length-=1
      */
 
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(3, 4, 2, 8, 7, 9, 0, 1, 5, 6));
+
+        System.out.println(numbers);
+        sort(numbers);
+
+        System.out.println(numbers);
+    }
     public static void sort(ArrayList<Integer> n) {
         int length = n.size();
 

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class InsertionSort {
    /*
@@ -15,6 +16,14 @@ public class InsertionSort {
 
         print(numbers)
     */
+
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(2, 5, 3, 7, 6, 8, 9, 1, 4, 0));
+
+        System.out.println(numbers);
+        sort(numbers);
+        System.out.println(numbers);
+    }
 
     public static void sort(ArrayList<Integer> n) {
         for (int i = 0; i < n.size(); i++) {

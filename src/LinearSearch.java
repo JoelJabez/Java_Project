@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class LinearSearch {
 
@@ -10,6 +11,13 @@ public class LinearSearch {
 
         return false
      */
+
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(2, 4, 3, 1, 6, 5));
+
+        search(numbers, 5);
+    }
+
     private static boolean present(ArrayList<Integer> n, int numberToSearch) {
         for (Integer integer : n) {
             if (numberToSearch == integer) {
