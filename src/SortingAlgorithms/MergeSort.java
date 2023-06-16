@@ -1,8 +1,11 @@
+package SortingAlgorithms;
+
 public class MergeSort {
     public static void main(String[] args) {
         int[] numbers = {3, 2, 1, 5, 4, 0};
 
         sort(numbers);
+        printArray(numbers);
     }
 
     public static void sort(int[] num) {
@@ -67,8 +70,7 @@ public class MergeSort {
     }
 
     private static void printArray(int[] num) {
-        for (int number :
-                num) {
+        for (int number : num) {
             System.out.print(number + " ");
         }
         System.out.println();

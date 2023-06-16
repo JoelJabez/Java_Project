@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Training.FileSystem" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="Training.FileSystem" />
+    <module name="Java_Project" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

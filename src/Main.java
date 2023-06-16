@@ -1,7 +1,4 @@
-import lombok.SneakyThrows;
-
 public class Main {
-    @SneakyThrows
     public static void main(String[] args) {
 //        Scanner scanner = new Scanner(System.in);
 //
@@ -172,17 +169,26 @@ public class Main {
 
 
 //       int[] numbers = {100, 2, 5, 8, 4, 6, 7, 1, 3, 9, 10, 0, 100};
-//       MergeSort.sort(numbers);
+//       SortingAlgorithms.MergeSort.sort(numbers);
 
 
 //        ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(7, 5, 3, 8, 4, 1, 9, 6, 0, 2));
 //
 //        long start = System.nanoTime();
-//        BubbleSort.sort(numbers);
+//        SortingAlgorithms.BubbleSort.sort(numbers);
 //        long end = System.nanoTime();
 //
 //        System.out.println(numbers);
 //        System.out.println(TimeUnit.NANOSECONDS.toMicros(end - start));
+
+        String name = "Joel";
+        name = String.format("%s Davethu", name);
+
+
+        StringBuilder firstName = new StringBuilder("Joel");
+
+        firstName.append(" Davethu");
+        System.out.println(firstName);
 
     }
 }
