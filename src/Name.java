@@ -1,8 +1,8 @@
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
 @Setter
+@Getter
 public class Name {
 
 //    String first_name, last_name;
@@ -22,6 +22,10 @@ public class Name {
     private String name;
     private int age;
 
+    public Name(String name) {
+        this.name = name;
+        age = 19;
+    }
 
     public void copy(Name n) {
        setAge(n.getAge());

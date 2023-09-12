@@ -30,12 +30,11 @@ public class InsertionSort {
     public static void sort(ArrayList<Integer> n) {
         for (int i = 0; i < n.size(); i++) {
             for (int j = i; j > 0; j--) {
-                if (n.get(j) > n.get(j - 1)) {
-                    break;
+                if (n.get(j) < n.get(j - 1)) {
+                    int temp = n.get(j);
+                    n.set(j, n.get(j - 1));
+                    n.set(j - 1, temp);
                 }
-                int temp = n.get(j);
-                n.set(j, n.get(j - 1));
-                n.set(j - 1, temp);
             }
         }
     }
@@ -43,12 +42,11 @@ public class InsertionSort {
     public static void sort(int[] n) {
         for (int i = 0; i < n.length; i++) {
             for (int j = i; j > 0; j--) {
-                if (n[j] > n[j - 1]) {
-                    break;
+                if (n[j] < n[j - 1]) {
+                    int temp = n[j];
+                    n[j]  = n[j - 1];
+                    n[j - 1] = temp;
                 }
-                int temp = n[j];
-                n[j]  = n[j - 1];
-                n[j - 1] = temp;
             }
         }
     }

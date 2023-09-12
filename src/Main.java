@@ -181,14 +181,8 @@ public class Main {
 //        System.out.println(numbers);
 //        System.out.println(TimeUnit.NANOSECONDS.toMicros(end - start));
 
-        String name = "Joel";
-        name = String.format("%s Davethu", name);
-
-
-        StringBuilder firstName = new StringBuilder("Joel");
-
-        firstName.append(" Davethu");
-        System.out.println(firstName);
+        // Function<Name, Name> name = Name::new;
+        // name.apply(new Name("Joel"));
 
     }
 }
